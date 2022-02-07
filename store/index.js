@@ -1,7 +1,7 @@
 export const state = () => ({
     theme:{
-        background: 'green',
-        iconcolor: 'green',
+        background: 'blue',
+        iconcolor: 'blue',
         primaryfontcolor: 'white'
     }
 })

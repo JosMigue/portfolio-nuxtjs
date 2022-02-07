@@ -67,5 +67,5 @@ export default {
   loading: {
     color: 'green',
     height: '5px'
-  }
+  },
 }
