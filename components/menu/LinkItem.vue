@@ -1,18 +1,11 @@
 <template>
-  <div>
-    <a :href="url" :class="`bg-white rounded-full py-1 px-2 text-${$store.state.theme.iconcolor}-500`">
-      <font-awesome-icon :icon="[iconclassprefix, iconclass]"/>
-    </a>
-  </div>
+      <a :href="url" :class="`w-full rounded-lg transform trasition-all duration-200 ease-in-out font-bold hover:bg-${$store.state.theme.background}-500 py-4 block text-${$store.state.theme.primaryfontcolor}`">
+        <font-awesome-icon class="mx-2" :icon="[iconclassprefix, iconclass]"/><slot></slot>
+      </a>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            
-        }
-    },
     props: {
         url: {
             type: String,
