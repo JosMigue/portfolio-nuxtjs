@@ -2,6 +2,7 @@ export const state = () => ({
     theme:{
         background: 'blue',
         iconcolor: 'blue',
-        primaryfontcolor: 'white'
+        primaryfontcolor: 'white',
+        secondaryfontcolor: 'gray'
     }
 })
