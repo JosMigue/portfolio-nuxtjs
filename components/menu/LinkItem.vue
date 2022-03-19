@@ -1,7 +1,7 @@
 <template>
-      <a :href="url" :class="`w-full rounded-lg transform trasition-all duration-200 ease-in-out font-bold hover:bg-${$store.state.theme.background}-500 py-4 block text-${$store.state.theme.primaryfontcolor}`">
+      <NuxtLink :to="url" :class="`w-full rounded-lg transform trasition-all duration-200 ease-in-out font-bold hover:bg-${$store.state.theme.background}-500 py-4 block text-${$store.state.theme.primaryfontcolor}`">
         <font-awesome-icon class="mx-2" :icon="[iconclassprefix, iconclass]"/><slot></slot>
-      </a>
+      </NuxtLink>
 </template>
 
 <script>

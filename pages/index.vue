@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header/>
     <div class="ml-72 max-h-screen overflow-y-scroll overflow-x-hidden">
       <div class="bg-gray-100">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-2 p-20">
@@ -9,7 +8,7 @@
             <h3 :class="`mb-4 text-${$store.state.theme.secondaryfontcolor}-500`">Full-Stack Developer</h3>
             <p :class="`mb-4 text-${$store.state.theme.secondaryfontcolor}-700`">I'm a Full-Stack Developer, I really enjoy typing and solving complex problems in any porject that I'm assigned.</p>
             <div class="flex gap-4">
-              <button type="button" class="py-2 px-5 rounded-md bg-blue-500 text-white font-bold hover:cursor-pointer"><font-awesome-icon class="mx-2" :icon="['fas', 'arrow-alt-circle-right']"/>View Portfolio</button>  
+              <button type="button" class="py-2 px-5 rounded-md bg-blue-500 text-white font-bold hover:cursor-pointer"><font-awesome-icon class="mx-2" :icon="['fas', 'arrow-alt-circle-right']"/>View Portfolio</button>
               <button type="button" class="py-2 px-5 rounded-md bg-gray-500 text-white font-bold hover:cursor-pointer"><font-awesome-icon class="mx-2" :icon="['fas', 'file-alt']"/>View Resume</button>  
             </div>       
           </div>
@@ -102,6 +101,19 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  transition: 'home'
 }
 </script>
+
+<style>
+.home-enter { transform: translateX(100%) }
+.home-enter-to { transform: translateX(0) }
+.home-enter-active { position: absolute }
+
+.home-leave { transform: translateX(0) }
+.home-leave-to { transform: translateX(-100%) }
+
+.home-enter-active,
+.home-leave-active { transition: all 750ms ease-in-out }
+</style>

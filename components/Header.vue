@@ -18,10 +18,10 @@
       </div>
       <hr class="border-gray-400">
       <div class="flex flex-col py-2 px-8 items-center text-center">
-        <MenuLinkItem url="#" iconclassprefix="fa" iconclass="user">About Me</MenuLinkItem>
-        <MenuLinkItem url="#" iconclassprefix="fas" iconclass="laptop-code">Portfolio</MenuLinkItem>
-        <MenuLinkItem url="#" iconclassprefix="fas" iconclass="file-alt">Resume</MenuLinkItem>
-        <MenuLinkItem url="#" iconclassprefix="fas" iconclass="envelope">Contact me</MenuLinkItem>
+        <MenuLinkItem url="/" iconclassprefix="fa" iconclass="user">About Me</MenuLinkItem>
+        <MenuLinkItem url="/portfolio" iconclassprefix="fas" iconclass="laptop-code">Portfolio</MenuLinkItem>
+        <MenuLinkItem url="/resume" iconclassprefix="fas" iconclass="file-alt">Resume</MenuLinkItem>
+        <MenuLinkItem url="/contactme" iconclassprefix="fas" iconclass="envelope">Contact me</MenuLinkItem>
         <button :class="`text-${$store.state.theme.primaryfontcolor} my-2 py-2 px-3 bg-${$store.state.theme.background}-800 rounded-md transform transition duration-200 ease-in-out hover:scale-110`"><font-awesome-icon class="mx-2" :icon="['fas', 'paper-plane']"/>Hire me</button>
       </div>
       <hr class="border-gray-400">
